@@ -1,0 +1,249 @@
+.image-preview-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button {
+  display: none; /* Initially hide the delete button */
+}
+
+/* 2222*/
+
+.image-preview-container2 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container2:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview2 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button2 {
+  display: none; /* Initially hide the delete button */
+}
+
+/* 3333*/
+.image-preview-container3 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container3:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview3 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview3 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button3 {
+  display: none; /* Initially hide the delete button */
+}
+/* 4444*/
+.image-preview-container4 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container4:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview4 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview4 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button4 {
+  display: none; /* Initially hide the delete button */
+}
+/* 5555*/
+.image-preview-container5 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container5:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview5 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview5 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button5 {
+  display: none; /* Initially hide the delete button */
+}
+/* 6666*/
+.image-preview-container6 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container6:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview6 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview6 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button6 {
+  display: none; /* Initially hide the delete button */
+}
+/* 77777*/
+.image-preview-container7 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container7:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview7 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview7 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button7 {
+  display: none; /* Initially hide the delete button */
+}
+/* 8888*/
+.image-preview-container8 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container8:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview8 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview8 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button8 {
+  display: none; /* Initially hide the delete button */
+}
+/* 99999*/
+.image-preview-container9 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container9:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview9 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview9 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button9 {
+  display: none; /* Initially hide the delete button */
+}
+/* 10*/
+
+.image-preview-container10 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-preview-container10:last-child {
+  margin-bottom: 10px; /* Add spacing between generated sections */
+}
+.image-preview10 {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-preview10 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.delete-button10 {
+  display: none; /* Initially hide the delete button */
+}
+
+
+/*buttonsss */
+
+
+

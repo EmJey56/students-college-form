@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <link rel="stylesheet" href="image.css" />
+  </head>
+  <style>
+    .alert {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="alert alert-success p-2 text-center" role="alert">
+            Form Submitted Successfully!
+          </div>
+          <!-- ... (swayam) ... -->
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >1) Placement offer letter</label
+              >
+              <div class="image-preview-container">
+                <form class="image-form" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input"
+                    accept="image/*"
+                    onchange="previewImage(this)"
+                  />
+                </form>
+                <div class="image-preview">
+                  <img class="preview-img" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button" onclick="deleteLastImageInput()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (2222) ... -->
+          <form id="contactForm2">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >2) Internship Cirtificate</label
+              >
+              <div class="image-preview-container2">
+                <form class="image-form2" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input2"
+                    accept="image/*"
+                    onchange="previewImage2(this)"
+                  />
+                </form>
+                <div class="image-preview2">
+                  <img class="preview-img2" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput2(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button2" onclick="deleteLastImageInput2()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (3333) ... -->
+          <form id="contactForm3">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >3) AICTE activity report</label
+              >
+              <div class="image-preview-container3">
+                <form class="image-form3" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input3"
+                    accept="image/*"
+                    onchange="previewImage3(this)"
+                  />
+                </form>
+                <div class="image-preview3">
+                  <img class="preview-img3" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput3(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button3" onclick="deleteLastImageInput3()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (4444) ... -->
+          <form id="contactForm4">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >4) Swayam Course Completion Cirtificates</label
+              >
+              <div class="image-preview-container4">
+                <form class="image-form4" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input4"
+                    accept="image/*"
+                    onchange="previewImage4(this)"
+                  />
+                </form>
+                <div class="image-preview4">
+                  <img class="preview-img4" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput4(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button4" onclick="deleteLastImageInput4()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (5555) ... -->
+          <form id="contactForm5">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >5) Paper publication details</label
+              >
+              <div class="image-preview-container5">
+                <form class="image-form5" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input5"
+                    accept="image/*"
+                    onchange="previewImage5(this)"
+                  />
+                </form>
+                <div class="image-preview5">
+                  <img class="preview-img5" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput5(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button5" onclick="deleteLastImageInput5()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (6666) ... -->
+          <form id="contactForm6">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >6) Funded research project details</label
+              >
+              <div class="image-preview-container6">
+                <form class="image-form6" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input6"
+                    accept="image/*"
+                    onchange="previewImage6(this)"
+                  />
+                </form>
+                <div class="image-preview6">
+                  <img class="preview-img6" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput6(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button6" onclick="deleteLastImageInput6()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (77777) ... -->
+          <form id="contactForm7">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >7) Student turned entrepreneur in Engineering/Technology
+                details</label
+              >
+              <div class="image-preview-container7">
+                <form class="image-form7" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input7"
+                    accept="image/*"
+                    onchange="previewImage7(this)"
+                  />
+                </form>
+                <div class="image-preview7">
+                  <img class="preview-img7" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput7(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button7" onclick="deleteLastImageInput7()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (8888) ... -->
+          <form id="contactForm8">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >8) Technical events inside or outside organization</label
+              >
+              <div class="image-preview-container8">
+                <form class="image-form8" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input8"
+                    accept="image/*"
+                    onchange="previewImage8(this)"
+                  />
+                </form>
+                <div class="image-preview8">
+                  <img class="preview-img8" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput8(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button8" onclick="deleteLastImageInput8()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (9999) ... -->
+          <form id="contactForm9">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >9) Extracurricular activities</label
+              >
+              <div class="image-preview-container9">
+                <form class="image-form9" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input9"
+                    accept="image/*"
+                    onchange="previewImage9(this)"
+                  />
+                </form>
+                <div class="image-preview9">
+                  <img class="preview-img9" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput9(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button9" onclick="deleteLastImageInput9()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <!-- ... (10) ... -->
+
+          <form id="contactForm10">
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5"
+                >10) Patents and Copyrights</label
+              >
+              <div class="image-preview-container10">
+                <form class="image-form10" enctype="multipart/form-data">
+                  <input
+                    type="file"
+                    class="image-input10"
+                    accept="image/*"
+                    onchange="previewImage10(this)"
+                  />
+                </form>
+                <div class="image-preview10">
+                  <img class="preview-img10" src="" alt="Image Preview" />
+                </div>
+                <button onclick="addImageInput10(this)">+</button>
+              </div>
+            </div>
+
+            <button class="delete-button10" onclick="deleteLastImageInput10()">
+              Delete Last Image
+            </button>
+          </form>
+
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 0%"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <span
+                id="successMessage"
+                class="text-white d-block text-center"
+              >
+                <!-- Success message will be displayed here -->
+              </span>
+            </div>
+          </div>
+
+          <button onclick="uploadImages()" type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="imagepreview.js"></script>
+    
+  </body>
+</html>
